@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz Page</title>
+	<script src="javascript/quiz.js"></script>
+	<link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<header>
+	<img src="images/logo.png" alt="Quiz Website Logo">
+	<nav>
+		<ul>
+			<li><a href="main.html">Home</a></li>
+			<li><a href="adminsration.html">Administration(faculty members)</a></li>
+			<li><a href="teatchers.html">Dashboard(teatchers)</a></li>
+			<li><a href="aboutUs.html">About Us</a></li>
+		</ul>
+	</nav>
+	<form>
+		<input type="text" placeholder="Search">
+		<button type="submit">Go</button>
+	</form>
+	<div class="user">
+		<a href="index.html">Logout</a>
+		<a  href="#"><img src="images/bell.png" alt="Notification" id="notification_img"></a>
+	</div>
+</header>
+<body>
+	<div id="quiz">
+		<div id="question1" class="question">What is the chemical symbol for gold?</div>
+		<div id="choices1" class="choices">
+			<input type="radio" id="newton" name="answer1" value="incorrect">
+			<label for="newton">A) Au</label><br>
+			<input type="radio" id="einstein" name="answer1" value="correct">
+			<label for="einstein">B) Ag</label><br>
+			<input type="radio" id="galileo" name="answer1" value="incorrect">
+			<label for="galileo">C) Cu</label><br>
+			<input type="radio" id="darwin" name="answer1" value="incorrect">
+			<label for="darwin">D) Fe</label><br>
+		</div>
+
+		<div id="question2" class="question">What type of energy is stored in the bonds between atoms?</div>
+		<div id="choices2" class="choices">
+			<input type="radio" id="plymouth" name="answer2" value="incorrect">
+			<label for="plymouth">A) Kinetic energy</label><br>
+			<input type="radio" id="jamestown" name="answer2" value="incorrect">
+			<label for="jamestown">B) Potential energy</label><br>
+			<input type="radio" id="boston" name="answer2" value="correct">
+			<label for="boston">C) Thermal energy</label><br>
+			<input type="radio" id="new-york" name="answer2" value="incorrect">
+			<label for="new-york">D) Electrical energy</label><br>
+		</div>
+
+		<button id="start-btn">Start</button>
+
+		<div id="timer">
+			Time left: <span id="time-left">60</span> seconds
+		</div>
+
+		<div id="progress-bar">
+			<div id="progress"></div>
+		</div>
+
+		<button id="review-btn">Mark for review</button>
+
+		<button id="submit-btn">Submit</button>
+
+		<div id="contact">
+			<p>If you encounter any problems or technical difficulties, please contact us at support@example.com.</p>
+		</div>
+	</div>
+	<footer>
+		<ul>
+			<li><a href="#">Newsletters</a></li>
+			<li><a href="#">Social Media</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+		<p>&copy; 2023 Quiz Website. All rights reserved.</p>
+	</footer>
+	
+</body>
+
+</html>

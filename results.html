@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz Page</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="javascript/results.js"></script>
+	<link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<header>
+	<img src="images/logo.png" alt="Quiz Website Logo">
+	<nav>
+		<ul>
+			<li><a href="main.html">Home</a></li>
+			<li><a href="adminsration.html">Administration(faculty members)</a></li>
+			<li><a href="teatchers.html">Dashboard(teatchers)</a></li>
+			<li><a href="aboutUs.html">About Us</a></li>
+		</ul>
+	</nav>
+	<form>
+		<input type="text" placeholder="Search">
+		<button type="submit">Go</button>
+	</form>
+	<div class="user">
+		<a href="index.html">Logout</a>
+		<a href="#"><img src="images/bell.png" alt="Notification" id="notification_img"></a>
+	</div>
+</header>
+
+<body>
+	<div class="container">
+		<textarea id="textbox" cols="30" rows="10"></textarea>
+		<a href="quizHistory.html"><button id="re_exam_button">Try again</button></a>
+		<a href="main.html"><button id="back_home_button">Go back to home page</button></a>
+		<div id="contact">
+			<p>If you encounter any problems or technical difficulties, please contact us at support@example.com.</p>
+		</div>
+
+	</div>
+	<footer>
+		<ul>
+			<li><a href="#">Newsletters</a></li>
+			<li><a href="#">Social Media</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+		<p>&copy; 2023 Quiz Website. All rights reserved.</p>
+	</footer>
+
+</body>
+
+</html>

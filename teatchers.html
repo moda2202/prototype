@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Teacher Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Quiz Website Logo">
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="adminsration.html">Administration(faculty members)</a></li>
+                <li><a href="teatchers.html">Dashboard(teatchers)</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+        <form>
+            <input type="text" placeholder="Search">
+            <button type="submit">Go</button>
+        </form>
+        <div class="user">
+            <a href="index.html">Logout</a>
+            <a href="#"><img src="images/bell.png" alt="Notification" id="notification_img"></a>
+        </div>
+    </header>
+    <div id="sidebar">
+        <h2>Quiz Management</h2>
+        <ul>
+            <li><a href="uiz_creation.html">Add New Quiz</a></li>
+            <li><a href="#">Edit Quiz</a></li>
+            <li><a href="#">View Statistics</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <h1>Recent Quizzes</h1>
+        <div id="filter">
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="">All</option>
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="english">English</option>
+            </select>
+
+            <label for="subject">Subject:</label>
+            <select id="subject">
+                <option value="">All</option>
+                <option value="algebra">Algebra</option>
+                <option value="biology">Biology</option>
+                <option value="grammar">Grammar</option>
+            </select>
+
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="">All</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <button id="filter-btn">Filter</button>
+        </div>
+
+        <ul id="quiz-list">
+            <!-- Quiz items will be dynamically added here -->
+        </ul>
+    </div>
+
+    <div id="analytics">
+        <h2>Quiz Analytics</h2>
+        <div id="quiz-analytics">
+            <!-- Quiz analytics will be dynamically added here -->
+        </div>
+        <div id="student-analytics">
+            <!-- Student analytics will be dynamically added here -->
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="#">Newsletters</a></li>
+            <li><a href="#">Social Media</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <p>&copy; 2023 Quiz Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

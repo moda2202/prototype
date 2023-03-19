@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Teacher Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Quiz Website Logo">
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="adminsration.html">Administration(faculty members)</a></li>
+                <li><a href="teatchers.html">Dashboard(teatchers)</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+        <form>
+            <input type="text" placeholder="Search">
+            <button type="submit">Go</button>
+        </form>
+        <div class="user">
+            <a href="index.html">Logout</a>
+            <a href="#"><img src="images/bell.png" alt="Notification" id="notification_img"></a>
+        </div>
+    </header>
+    <h1 id="creation_page_h1">Quiz Creation/Editing Page</h1>
+    <form id="quiz_creation_form">
+        <label for="quizTitle">Quiz Title:</label>
+        <input type="text" id="title" name="quizTitle"><br><br>
+        <label for="quizDesc">Quiz Description:</label>
+        <textarea id="description" name="quizDesc"></textarea><br><br>
+        <label for="quizQuestions">Quiz Questions:</label>
+        <textarea id="questions" name="quizQuestions"></textarea><br><br>
+        <label for="quizAnswer1">Answer 1:</label>
+        <input type="text" id="answer1" name="quizAnswer1"><br><br>
+        <label for="quizAnswer2">Answer 2:</label>
+        <input type="text" id="answer2" name="quizAnswer2"><br><br>
+        <label for="quizAnswer3">Answer 3:</label>
+        <input type="text" id="answer3" name="quizAnswer3"><br><br>
+        <label for="quizAnswer4">Answer 4:</label>
+        <input type="text" id="answer4" name="quizAnswer4"><br><br>
+        <label for="quizMedia">Quiz Media:</label>
+        <input type="file" id="media" name="quizMedia"><br><br>
+        <label for="quizPreview">Quiz Preview:</label>
+        <input type="button" id="preview" value="Preview"><br><br>
+        <label for="quizDuration">Quiz Duration:</label>
+        <input type="text" id="duration" name="quizDuration"><br><br>
+        <label for="quizPassingScore">Quiz Passing Score:</label>
+        <input type="text" id="passingScore" name="quizPassingScore"><br><br>
+        <label for="quizAttempts">Quiz Attempts:</label>
+        <input type="text" id="attempts" name="quizAttempts"><br><br>
+        <input type="submit" id="saveQuiz" value="Save Quiz">
+    </form>
+    <footer>
+        <ul>
+            <li><a href="#">Newsletters</a></li>
+            <li><a href="#">Social Media</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <p>&copy; 2023 Quiz Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
